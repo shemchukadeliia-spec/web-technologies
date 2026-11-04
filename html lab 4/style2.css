@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #333333;
+}
+ul a {
+    color: purple;
+}
+.main-menu > li > a {
+    color: green;
+}
+.list-unstyled {
+    list-style-type: none;
+}
+.list-square {
+    list-style-type: square;
+}
+.list-check {
+    list-style-type: '\2713';
+}
+.list-check li {
+    padding-left: 5px;
+}
+.list-square a {
+    text-decoration: none;
+}
+ol {
+    list-style-position: inside;
+    margin-top: 5px;
+}
