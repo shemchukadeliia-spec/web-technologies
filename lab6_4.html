@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4 — Навигаційні панелі</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <nav class="navbar horizontal-nav">
+        <ul class="menu">
+            <li class="menu-item active">
+                <a href="#"><span class="material-symbols-outlined">home</span> Головна</a>
+                <ul class="submenu">
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Про нас</a>
+                        <ul class="submenu-sub">
+                            <li><a href="#">Історія</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#"><span class="material-symbols-outlined">search</span> Пошук</a>
+            </li>
+            <li class="menu-item menu-item-right">
+                <a href="#"><span class="material-symbols-outlined">mail</span> Контакти</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Лабораторна робота №6 — Завдання 4</h1>
+        <p>Прокрутіть сторінку вниз, щоб перевірити фіксовану горизонтальну панель навігації.</p>
+        <div style="height: 1200px;"></div>
+    </div>
+
+    <nav class="navbar vertical-nav">
+        <ul class="v-menu">
+            <li class="v-item active">
+                <a href="#"><span class="material-symbols-outlined">home</span> Home</a>
+                <ul class="v-submenu">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Profile</a>
+                        <ul class="v-submenu-sub">
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="v-item">
+                <a href="#"><span class="material-symbols-outlined">info</span> About</a>
+            </li>
+            <li class="v-item">
+                <a href="#"><span class="material-symbols-outlined">work</span> Work With Me</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
