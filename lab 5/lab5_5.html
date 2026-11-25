@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання з CSS (IT-курс)</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <h2>1. Параметри блоку (box-sizing)</h2>
+    <div>
+        box-sizing: content-box;<br>
+        Ширина картки курсу: 350px (з урахуванням padding)
+    </div>
+    <div>
+        box-sizing: border-box;<br>
+        Ширина картки курсу: 300px (фіксована ширина)
+    </div>
+
+    <hr>
+
+    <h2>2. Переповнення вмісту (overflow)</h2>
+    <div>
+        <strong>overflow: visible;</strong> Опис обраної IT-спеціальності занадто довгий і буде виходити за межі блоку картки, оскільки значення visible не обрізає вміст.
+    </div>
+    <div>
+        <strong>overflow: hidden;</strong> Опис обраної IT-спеціальності занадто довгий і буде акуратно обрізатися по краю рамки блоку, зайвий текст стає невидимим.
+    </div>
+    <div>
+        <strong>overflow: scroll;</strong> Програма курсу довга, тут завжди відображаються смуги прокрутки для зручного перегляду всіх модулів навчання.
+    </div>
+    <div>
+        <strong>overflow: auto;</strong> Програма курсу довга, смуга прокрутки з'явиться автоматично тільки тоді, коли текст перевищує висоту блоку.
+    </div>
+
+    <hr>
+
+    <h2>3. Навігаційне меню платформи (display)</h2>
+    <nav>
+        <ul>
+            <li><a href="#">Напрямки</a></li>
+            <li><a href="#">Розклад</a></li>
+            <li><a href="#">Викладачі</a></li>
+            <li class="hidden-item"><a href="#">Архів вебінарів</a></li>
+            <li><a href="#">Підтримка</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    background-color: #e8f4f8;
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+    padding: 30px;
+}
+
+h2 {
+    color: #1b4f72;
+    margin-top: 25px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #a9cce3;
+    margin: 30px 0;
+}
+
+div:nth-of-type(1) {
+    box-sizing: content-box;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2e86c1;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+div:nth-of-type(2) {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2e86c1;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+div:nth-of-type(3),
+div:nth-of-type(4),
+div:nth-of-type(5),
+div:nth-of-type(6) {
+    width: 250px;
+    max-height: 80px; 
+    border: 2px solid #2e86c1;
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+div:nth-of-type(3) { overflow: visible; }
+div:nth-of-type(4) { overflow: hidden; }
+div:nth-of-type(5) { overflow: scroll; }
+div:nth-of-type(6) { overflow: auto;}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+nav a {
+    display: block; 
+    padding: 10px 20px;
+    background-color: #2e86c1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #1b4f72;
+}
+
+/* 
+   display: none повністю прибирає елемент зі сторінки (він не займає жодного місця),
+   на відміну від visibility: hidden, який робить його невидимим, але залишає порожнє місце під ним.
+*/
+nav li.hidden-item {
+    display: none;
+}
