@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Заявка на участь в IT-курсі</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <h2>Реєстраційна анкета</h2>
+
+    <form action="" method="post" enctype="multipart/form-data">
+    
+        <fieldset>
+            <legend>Контактна інформація</legend>
+            
+            <p>
+                <label for="fullname">Прізвище та ім'я:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Шевченко Тарас" required tabindex="1">
+            </p>
+
+            <p>
+                <label for="city">Місто проживання:</label>
+                <input type="text" id="city" name="city" placeholder="Київ" required tabindex="2">
+            </p>
+
+            <p>
+                <label for="email">Корпоративна або особиста пошта:</label>
+                <input type="email" id="email" name="email" placeholder="user@domain.com" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required tabindex="3">
+            </p>
+
+            <p>
+                <label for="phone">Контактний номер:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="^\+380\d{9}$" required tabindex="4">
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Акаунт</legend>
+            
+            <p>
+                <label for="password">Пароль (від 8 символів, 1 цифра, 1 велика і 1 мала літера):</label>
+                <input type="password" id="password" name="password" placeholder="Створіть пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required tabindex="5">
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Напрямок та переваги</legend>
+
+            <p>
+                <span>Рівень володіння ПК:</span>
+                <label><input type="radio" name="tech_level" value="basic" tabindex="6"> Початковий</label>
+                <label><input type="radio" name="tech_level" value="inter" checked tabindex="7"> Впевнений користувач</label>
+                <label><input type="radio" name="tech_level" value="advanced" tabindex="8"> Просунутий</label>
+            </p>
+
+            <p>
+                <span>Бажаний час занять:</span>
+                <label><input type="radio" name="schedule" value="morning" tabindex="9"> Ранок</label>
+                <label><input type="radio" name="schedule" value="evening" checked tabindex="10"> Вечір</label>
+                <label><input type="radio" name="schedule" value="weekend" tabindex="11"> Вихідні</label>
+            </p>
+
+            <p>
+                <span>Цікаві напрямки:</span>
+                <label><input type="checkbox" name="area1" value="web" tabindex="12"> Web-розробка</label>
+                <label><input type="checkbox" name="area2" value="design" tabindex="13"> UI/UX Дизайн</label>
+                <label><input type="checkbox" name="area3" value="qa" tabindex="14"> Тестування (QA)</label>
+                <label><input type="checkbox" name="area4" value="data" tabindex="15"> Data Science</label>
+            </p>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Додатково</legend>
+
+            <p>
+                <label for="education">Освітній рівень:</label>
+                <select id="education" name="education" tabindex="16">
+                    <option value="school">Школа / Ліцей</option>
+                    <option value="bachelor" selected>Бакалаврат</option>
+                    <option value="master">Магістратура</option>
+                    <option value="finished">Вища освіта (завершено)</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="skills">Додаткові навички (множинний вибір):</label>
+                <select id="skills" name="skills" multiple size="3" tabindex="17">
+                    <option value="english">Англійська B2+</option>
+                    <option value="git">Робота з Git</option>
+                    <option value="figma">Figma / Canva</option>
+                    <option value="sql">Бази даних (SQL)</option>
+                    <option value="management">Тайм-менеджмент</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Спеціалізація та очікування</legend>
+
+            <p>
+                <label for="tech_stack">Основна технологія (з групами):</label>
+                <select id="tech_stack" name="tech_stack" tabindex="18">
+                    <optgroup label="Frontend">
+                        <option value="html_css">HTML / CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="react">React.js</option>
+                    </optgroup>
+                    <optgroup label="Backend">
+                        <option value="python">Python / Django</option>
+                        <option value="node">Node.js</option>
+                        <option value="php">PHP / Laravel</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="flutter">Flutter</option>
+                        <option value="react_native">React Native</option>
+                        <option value="android">Android (Kotlin)</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="qa_manual">QA Manual</option>
+                        <option value="ui_ux">UI/UX Design</option>
+                        <option value="pm">Project Management</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="goal">Головна мета навчання (з підказкою):</label>
+                <input list="goals" id="goal" name="goal" placeholder="Оберіть або введіть..." tabindex="19">
+                <datalist id="goals">
+                    <option value="Змінити професію (вітч у IT)">
+                    <option value="Підвищити кваліфікацію (Upskilling)">
+                    <option value="Створити власний проєкт (Startup)">
+                    <option value="Отримати першу роботу (Junior)">
+                    <option value="Для загального розвитку">
+                </datalist>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Матеріали</legend>
+
+            <p>
+                <label for="resume">Резюме / Портфоліо (можна кілька файлів):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.zip" multiple tabindex="20">
+            </p>
+
+            <p>
+                <label for="about">Коротко про себе та досвід:</label><br>
+                <textarea id="about" name="about" rows="3" placeholder="Розкажіть трохи про свій бекграунд..." tabindex="21"></textarea>
+            </p>
+        </fieldset>
+
+        <p style="text-align: center;">
+            <button type="submit" tabindex="22">Надіслати заявку</button>
+            <button type="reset" tabindex="23">Очистити форму</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
